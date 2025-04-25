@@ -28,7 +28,7 @@ app.use("/auth", authRoutes)
 app.use("/user", userRoutes)
 app.use("/payment", paymentRoutes)
 
-app.use("/", (PORT)=>{
+app.use("/", (req, res)=>{
     return res.status(200).json({
         success: true,
         message: `Digital Dinner Server is up on port ${PORT}`
