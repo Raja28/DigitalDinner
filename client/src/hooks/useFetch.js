@@ -17,7 +17,10 @@ export default function useFetch() {
         try {
             let res
             if (query) {
-                res = await fetch(`${BASEURL}/user/menu/${query}`);
+                res = await fetch(`${BASEURL}/user/menu/${query}`, {
+                    method: 'GET',
+                    credentials: 'include',
+                });
             } else {
                 res = await fetch(`${BASEURL}/user/menu/orders`, {
                     method: 'POST',
