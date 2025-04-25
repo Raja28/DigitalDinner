@@ -7,7 +7,7 @@ PORT = process.env.PORT
 
 app.use(cors({
     cors: {
-        origin: "*",
+        origin: "https://inquisitive-daffodil-a3092a.netlify.app",
         credential: true
     }
 }))
