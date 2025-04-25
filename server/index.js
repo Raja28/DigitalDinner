@@ -16,8 +16,8 @@ app.use(express.json())
 
 const fs = require('fs')
 const Menu = require('./models/menu')
-const menuItems = fs.readFileSync('data.json')
-const menuItemsJson = JSON.parse(menuItems)
+// const menuItems = fs.readFileSync('data.json')
+// const menuItemsJson = JSON.parse(menuItems)
 
 
 const authRoutes = require("./routes/auth")
