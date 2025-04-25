@@ -6,10 +6,10 @@ require('dotenv').config()
 PORT = process.env.PORT
 
 app.use(cors({
-    cors: {
-        origin: "https://inquisitive-daffodil-a3092a.netlify.app",
-        credential: true
-    }
+
+    origin: "https://inquisitive-daffodil-a3092a.netlify.app",
+    credentials: true
+
 }))
 
 app.use(express.json())
@@ -28,7 +28,7 @@ app.use("/auth", authRoutes)
 app.use("/user", userRoutes)
 app.use("/payment", paymentRoutes)
 
-app.use("/", (req, res)=>{
+app.use("/", (req, res) => {
     return res.status(200).json({
         success: true,
         message: `Digital Dinner Server is up on port ${PORT}`
