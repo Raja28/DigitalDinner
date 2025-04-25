@@ -28,7 +28,7 @@ export default function useFetch() {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${JSON.parse(sessionStorage.getItem('token'))}`
                     },
-
+                    credentials: 'include'
                 }
                 );
             }
