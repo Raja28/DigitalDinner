@@ -6,12 +6,12 @@ require('dotenv').config()
 PORT = process.env.PORT
 
 app.use(cors({
-
-    origin: "https://inquisitive-daffodil-a3092a.netlify.app",
+    // origin: "https://inquisitive-daffodil-a3092a.netlify.app",
+    origin: "https://digital-diner-client.netlify.app",
     credentials: true
-
 }))
 
+DBConnection()
 app.use(express.json())
 
 const fs = require('fs')
@@ -60,7 +60,6 @@ app.use("/", (req, res) => {
 // });
 
 
-DBConnection()
 app.listen(PORT, () => {
     console.log("Digital Diner server running on port", PORT);
 })
