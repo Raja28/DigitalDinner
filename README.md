@@ -29,7 +29,6 @@ To run **Digital Diner** locally on your machine, follow these steps:
 First, clone the project to your local machine:
 
 ## Add ENV
-(Backend)
 - MONGO_URI=your_mongo_connection_string
 - RAZORPAY_KEY=your_razorpay_key
 - RAZORPAY_SECRET=your_razorpay_secret
