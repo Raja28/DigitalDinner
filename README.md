@@ -33,7 +33,6 @@ First, clone the project to your local machine:
 - MONGO_URI=your_mongo_connection_string
 - RAZORPAY_KEY=your_razorpay_key
 - RAZORPAY_SECRET=your_razorpay_secret
-(Frontend)
 - VITE_BASE_URL= https://digital-dinner-three.vercel.app
 - VITE_RAZORPAY_KEY = csdfcsdsf svsvsvefd
 - REACT_APP_RAZORPAY_SECRET 
